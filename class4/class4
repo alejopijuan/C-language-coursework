@@ -1,0 +1,23 @@
+Script started on Thu 16 Feb 2017 02:12:26 PM EST
+^C[01;32mapiju001@cslab-113[01;34m ~/files/csc333/class4 $[00m cat hw259.c
+#include <stdio.h>
+	
+	int consist_number(int x, int y)
+	{
+	    return (x & 0xFF) | (y & ~0xFF);
+	}
+	
+	int main ()
+	{
+	    int x, y;
+	    x = 0x89ABCDEF;
+	    y = 0x76543210;
+	    printf("%X\n",consist_number(x, y));
+	    return 0;
+	}
+[01;32mapiju001@cslab-113[01;34m ~/files/csc333/class4 $[00m ./hw259
+765432EF
+[01;32mapiju001@cslab-113[01;34m ~/files/csc333/class4 $[00m exit
+exit
+
+Script done on Thu 16 Feb 2017 02:12:47 PM EST

@@ -1,0 +1,36 @@
+Script started on Tue 21 Feb 2017 02:04:16 PM EST
+^C[01;32mapiju001@cslab-111[01;34m ~/files/csc333/class5 $[00m cat hw260.c
+#include <stdio.h>
+#include <stdlib.h>
+/*HW 2.60*/
+
+main()
+{
+unsigned xv=0, yv, ib;
+
+printf("Enter x (4 bytes value) in hex: 0x");
+scanf("%x",&xv);
+printf("Number of bits to shift max 32:	  ");
+scanf("%d",&ib);
+
+yv=xv<<ib;
+
+
+printf("\n 0X%.8X >> %d\t=0X%.8X\n\n", xv, ib, yv);
+
+}
+[01;32mapiju001@cslab-111[01;34m ~/files/csc333/class5 $[00m ./hw260
+Enter x (4 bytes value) in hex: 0x^[[E^[[E^[[E555
+Number of bits to shift max 32:	  
+ 0X00000000 >> 0	=0X00000000
+
+[01;32mapiju001@cslab-111[01;34m ~/files/csc333/class5 $[00m ./hw260
+Enter x (4 bytes value) in hex: 0x5555
+Number of bits to shift max 32:	  7
+
+ 0X00005555 >> 7	=0X002AAA80
+
+[01;32mapiju001@cslab-111[01;34m ~/files/csc333/class5 $[00m exit
+exit
+
+Script done on Tue 21 Feb 2017 02:04:54 PM EST

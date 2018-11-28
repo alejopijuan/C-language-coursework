@@ -1,0 +1,87 @@
+Script started on Tue 18 Apr 2017 03:00:40 PM EDT
+];apiju001@cslab-104.cs.plattsburgh.eduHellooooooooooo!!!  ~gdb sum[K[K[Krsum
+GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from rsum...(no debugging symbols found)...done.
+(gdb) start
+Temporary breakpoint 1 at 0x400531
+Starting program: /local/files/apiju001/csc333/class12/rsum 
+
+Temporary breakpoint 1, 0x0000000000400531 in main ()
+(gdb) continue
+Continuing.
+ sum = 45
+[Inferior 1 (process 22957) exited with code 012]
+(gdb) c
+The program is not being run.
+(gdb) r
+Starting program: /local/files/apiju001/csc333/class12/rsum 
+ sum = 45
+[Inferior 1 (process 22961) exited with code 012]
+(gdb) c
+The program is not being run.
+(gdb) r
+Starting program: /local/files/apiju001/csc333/class12/rsum 
+ sum = 45
+[Inferior 1 (process 22962) exited with code 012]
+(gdb) continue
+The program is not being run.
+(gdb) d
+(gdb) l 20
+15	dl-debug.c: No such file or directory.
+(gdb) l 5
+1	in dl-debug.c
+(gdb) p av
+No symbol "av" in current context.
+(gdb) b 7
+Breakpoint 2 at 0x7ffff7dea950: file dl-debug.c, line 7.
+(gdb) c
+The program is not being run.
+(gdb) conitnue[K[K[K[K[Ktinue
+The program is not being run.
+(gdb) deb[K[K[Kr
+Starting program: /local/files/apiju001/csc333/class12/rsum 
+
+Breakpoint 2, _dl_debug_initialize (ldbase=140737351884800, ns=ns@entry=0)
+    at dl-debug.c:50
+50	dl-debug.c: No such file or directory.
+(gdb) bt
+#0  _dl_debug_initialize (ldbase=140737351884800, ns=ns@entry=0)
+    at dl-debug.c:50
+#1  0x00007ffff7ddcf54 in dl_main (phdr=<optimized out>, phdr@entry=0x400040, 
+    phnum=<optimized out>, phnum@entry=9, 
+    user_entry=user_entry@entry=0x7fffffffdf38, auxv=<optimized out>)
+    at rtld.c:1346
+#2  0x00007ffff7df1525 in _dl_sysdep_start (
+    start_argptr=start_argptr@entry=0x7fffffffe020, 
+    dl_main=dl_main@entry=0x7ffff7ddb910 <dl_main>) at ../elf/dl-sysdep.c:249
+#3  0x00007ffff7ddecc8 in _dl_start_final (arg=0x7fffffffe020) at rtld.c:331
+#4  _dl_start (arg=0x7fffffffe020) at rtld.c:557
+#5  0x00007ffff7ddb2d8 in _start () from /lib64/ld-linux-x86-64.so.2
+#6  0x0000000000000001 in ?? ()
+#7  0x00007fffffffe344 in ?? ()
+#8  0x0000000000000000 in ?? ()
+(gdb) exit
+Undefined command: "exit".  Try "help".
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 22965] will be killed.
+
+Quit anyway? (y or n) y
+];apiju001@cslab-104.cs.plattsburgh.eduHellooooooooooo!!!  ~exit
+exit
+
+Script done on Tue 18 Apr 2017 03:02:06 PM EDT

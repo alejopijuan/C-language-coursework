@@ -1,0 +1,9 @@
+Script started on Thu 30 Mar 2017 02:56:53 PM EDT
+^C[01;32mapiju001@cslab-125[01;34m ~/files/csc333/class9 $[00m cat factfor.c
+cat: factfor.c: No such file or directory
+[01;32mapiju001@cslab-125[01;34m ~/files/csc333/class9 $[00m exitt
+exitt: command not found
+[01;32mapiju001@cslab-125[01;34m ~/files/csc333/class9 $[00m exit
+exit
+
+Script done on Thu 30 Mar 2017 02:57:05 PM EDT

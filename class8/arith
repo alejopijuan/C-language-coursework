@@ -1,0 +1,17 @@
+Script started on Tue 21 Mar 2017 03:07:01 PM EDT
+^C[01;32mapiju001@cslab-109[01;34m ~/files/csc333/class8 $[00m cat smthl.c
+#include <stdlib.h>
+
+int arith(int x, int y, int z)
+{
+int t1 = x^y;
+int t2 = t1 >> 3;
+int t3 = ~t2;
+int t4 = t3-z;
+
+return t4;
+}
+[01;32mapiju001@cslab-109[01;34m ~/files/csc333/class8 $[00m exit
+exit
+
+Script done on Tue 21 Mar 2017 03:07:29 PM EDT
